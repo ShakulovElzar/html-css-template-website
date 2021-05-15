@@ -1,16 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The loop</title>
+        <link
+            rel="icon"
+            href="/src/img/favicon.png"
+            sizes="40x40"
+            type="image/png"
+        />
 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/css/normalize.css" />
+        <link rel="stylesheet" href="/src/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="header__nav">
+                        <div class="header__for">
+                            <div class="header__item for-men">
+                                <span>Для мужчин</span>
+                                <img src="/src/img/polygon.svg" alt="" />
+                            </div>
+                            <div class="header__item for-women">
+                                <span>Для женщин</span>
+                                <img src="/src/img/polygon.svg" alt="" />
+                            </div>
+                            <div class="header__item for-child">
+                                <span>Для детей</span>
+                                <img src="/src/img/polygon.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <div class="logo">
+                                <img src="/src/img/logo-img.svg" alt="" />
+                                <span>THE LOOP</span>
+                            </div>
+                        </div>
+                        <div class="header__delivery-payment">
+                            <div class="header__item">Оплата</div>
+                            <div class="header__item">Доставка</div>
+                        </div>
+                        <div class="header__cart">
+                            <div class="header__cart-item">
+                                <img
+                                    src="/src/img/cart.svg"
+                                    alt=""
+                                    class="header__cart-svg"
+                                />
+                            </div>
+                            <div class="header__cart-item">
+                                <span class="header__cart-number">5</span>
+                                <img
+                                    src="/src/img/cart-number-background.svg"
+                                    alt=""
+                                    class="header__number-svg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <script src="/src/scripts/slider.js"></script>
-</body>
+        <main>
+            <div class="sales">
+                <div class="container">
+                    <div class="sales__nav">
+                        <div class="sales__info">
+                            <h2>Зимняя распродажа</h2>
+                            <h1>СКИДКИ ДО 90%</h1>
+                            <button class="firstcolor-button sales__button">
+                                Смотреть модели
+                            </button>
+                        </div>
+
+                        <div class="slider">
+                            <div class="slider__list">
+                                <div>
+                                    <img
+                                        src="/src/img/slider-element.png"
+                                        class="slider__image"
+                                        alt=""
+                                    /><span>9 900 ₽</span><span>1 900 ₽</span>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/src/img/slider-element.png"
+                                        class="slider__image"
+                                        alt=""
+                                    /><span>9 900 ₽</span><span>1 900 ₽</span>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/src/img/slider-element.png"
+                                        class="slider__image"
+                                        alt=""
+                                    /><span>9 900 ₽</span><span>1 900 ₽</span>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/src/img/slider-element.png"
+                                        class="slider__image"
+                                        alt=""
+                                    /><span>9 900 ₽</span><span>1 900 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider__toogler">
+                <button class="toogle-box"></button>
+                <button class="toogle-box"></button>
+                <button class="toogle-box"></button>
+                <button class="toogle-box"></button>
+            </div>
+
+        </main>
+
+        <script src="/src/scripts/slider.js"></script>
+    </body>
 </html>
