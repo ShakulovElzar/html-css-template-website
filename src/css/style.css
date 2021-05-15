@@ -166,3 +166,29 @@ body {
   border: none;
   transition: all ease 1s;
 }
+
+.delivery {
+  background-color: #212121;
+  text-align: center;
+  padding: 70px;
+  color: white;
+}
+
+.delivery p {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  letter-spacing: 0.02em;
+}
+
+.delivery p span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.delivery span {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 26px;
+}
