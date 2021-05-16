@@ -24,12 +24,21 @@ body{
 $firstColor: #D7B399; // #{$firstColor}
 $secondColor: #212121; // #{$secondColor}
 
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
 .firstcolor-button{
     border: none;
     background: #{$firstColor};
     color: #ffffff;
     font-size: 16px;
     letter-spacing: 0.03em;
+    font-weight: 500;
 }
 
 .header{
@@ -189,6 +198,7 @@ $secondColor: #212121; // #{$secondColor}
         letter-spacing: 0.02em;
 
         span{
+            font-size: 30px;
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
             letter-spacing: 0.02em;
@@ -202,3 +212,242 @@ $secondColor: #212121; // #{$secondColor}
     }
 }
 
+.wears{
+    &-collections__nav{
+        display: flex;
+    }
+
+    &-collections__item:nth-child(1){
+        background: #F9F6F1;
+    }
+    &-collections__item:nth-child(2){
+        background: #F4F4F4;
+    }
+
+    &-collections__item{
+        position: relative;
+        width: 555px;
+        max-height: 250px;
+        padding: 60px 0px 60px 35px;
+
+
+        span{
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            
+            span{
+                font-family: 'Montserrat';
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0.06em;
+            }
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+
+        button{
+            width: 80px;
+            height: 30px;
+            margin-top: 40px;
+        }
+
+        .collections__picture{
+            position: absolute;
+            right: 15px;
+            bottom: 0px;
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__element{
+        width: 277px;
+        height: 236px;
+        position: relative;
+
+        span{
+            position: absolute;
+            left: 30px;
+            bottom: 24px;
+            font-size: 21px;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            z-index: 2px;
+        }
+    }
+}
+
+.newmodels{
+    background-color: #fff;
+    padding: 150px 0;
+
+    &__content{
+        button{
+            align-content: center;
+            width: 220px;
+            height: 55px;
+            margin-top: 150px;
+            margin-left: 445px;
+            font-size: 16px;
+
+            img{
+                margin-left: 10px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    &__row{
+        display: flex;
+        grid-gap: 30px;
+        margin-top: 70px;
+    }
+
+    &__item{
+        position: relative;
+        max-width: 255px;
+        max-height: 345px;
+        padding: 20px 25px;
+
+        .subtitle{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            margin: 15px 0 15px 0;
+            text-align: center;
+        }
+
+        .cost{
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #D7B399;
+        }
+    }
+
+    &__item-corner{
+        position: absolute;
+    }
+    &__item-corner:nth-child(1){
+        left: 0;
+        top: 0;
+    }
+    &__item-corner:nth-child(2){
+        right: 0;
+        top: 0;
+    }
+    &__item-corner:nth-child(3){
+        left: 0;
+        top: 320px;
+    }
+    &__item-corner:nth-child(4){
+        right: 0;
+        top: 320px;
+    }
+}
+
+.gifts{
+    background-color: #{$secondColor};
+    padding: 70px 0;
+
+    &__row{
+        display: flex;
+        align-content: center;
+        span{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: #fff;
+
+        }
+        input{
+            width: 255px;
+            height: 40px;
+            margin-left: 40px;
+            border: none;
+
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            padding: 0 0 0 20px;
+        }
+        button{
+            height: 40px;
+            width: 185px;
+            margin-left: 35px;
+            border: none;
+            padding: 0;
+            font-size: 14px;   
+        }
+    }
+}
+
+.footer{
+    background: #{$secondColor};
+    padding: 80px 0;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info{
+        max-width: 200px;
+        color: white;
+
+        p{
+            margin-top: 30px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .logo{
+            color: white;
+        }
+    }
+
+    &__link{
+        display: flex;
+        grid-gap: 75px;
+    }
+
+    &__column-names{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        color: white;
+    }
+
+    &__link-links{
+        line-height: 22px;
+        font-size: 14px;
+        color: white;
+    }
+
+    &__logo{
+        margin-right: 5px;
+    }
+}
+
+.after-footer{
+    padding: 30px 0;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        font-size: 14px;
+    }
+}
